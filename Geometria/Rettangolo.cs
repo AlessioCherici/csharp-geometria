@@ -32,8 +32,8 @@ namespace Geometria
             Console.WriteLine("Perimetro: " + PerimetroRettangolo + " Cm");
             return PerimetroRettangolo;
             }
-            
-        public void StampaRettangolo() 
+
+        public void StampaRettangolo()
             {
             Console.WriteLine("-- " + Nome + " --");
             Console.WriteLine("Base:" + BaseRettangolo + " cm");
@@ -41,9 +41,9 @@ namespace Geometria
             CalcolaPerimetro();
             CalcolaArea();
             }
-
         }
     }
+
 
 
 

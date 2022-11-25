@@ -13,7 +13,7 @@ Perimetro: 60 cm
 Area: 200 cm2 */
 
 //--------------------- Parte 1 --------------------
-using Geometria;
+using Bonus;
 using System;
 
 //Rettangolo hardcodato per debug
@@ -74,3 +74,10 @@ Rettangolo3.StampaRettangolo();
 
 //--------------------- Parte 4 --------------------
 
+
+// potrei unire Disegnarettangolo a Stamparettangolo in maniera da completare ancora di piu il metodo
+// lascio cosi per permettere una piu semplice correzione dell' esercizio (per non macchiare parte 1/2/3 
+
+// Ciao Emanuele!
+
+Rettangolo1.DisegnaRettangolo();
