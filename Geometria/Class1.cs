@@ -10,8 +10,8 @@ namespace Geometria
 
         {
         public string Nome;
-        public float BaseRettangolo;
-        public float AltezzaRettangolo;
+        public float BaseRettangolo;                                    // Variabile float anzichè int per generalizzare metodi
+        public float AltezzaRettangolo;                                 // Variabile float anzichè int per generalizzare metodi
 
 
         //-------------------------------- Metodi Rettangolo ----------------------------------------
@@ -21,7 +21,7 @@ namespace Geometria
         public float CalcolaArea()
             {
             float AreaRettangolo = BaseRettangolo * AltezzaRettangolo;
-            Console.WriteLine("L' area del rettangolo " + Nome + " è di: " + AreaRettangolo + " Cm2");
+            Console.WriteLine("Area: " + AreaRettangolo + " Cm2" + "\n");
             return AreaRettangolo;
             }
 
@@ -29,9 +29,19 @@ namespace Geometria
         public float CalcolaPerimetro()
             {
             float PerimetroRettangolo = (BaseRettangolo + AltezzaRettangolo) * 2;
-            Console.WriteLine("Il perimetro del rettangolo " + Nome + " è di: " + PerimetroRettangolo + " Cm");
+            Console.WriteLine("Perimetro: " + PerimetroRettangolo + " Cm");
             return PerimetroRettangolo;
             }
+            
+        public void StampaRettangolo() 
+            {
+            Console.WriteLine("-- " + Nome + " --");
+            Console.WriteLine("Base:" + BaseRettangolo + "cm");
+            Console.WriteLine("Altezza:" + AltezzaRettangolo + "cm");
+            CalcolaPerimetro();
+            CalcolaArea();
+            }
+
         }
     }
 
