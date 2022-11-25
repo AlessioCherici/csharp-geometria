@@ -21,7 +21,7 @@ using System;
 Rettangolo RettangoloEsercizio = new Rettangolo();
 RettangoloEsercizio.AltezzaRettangolo = 10;
 RettangoloEsercizio.BaseRettangolo = 20;
-RettangoloEsercizio.Nome = "Esercizio";
+RettangoloEsercizio.Nome = "Parte 1";
 RettangoloEsercizio.StampaRettangolo();   // Ho creato questo metodo nella parte 3, lo utilizzerò per stampare
                                           // in maniera piu ordinata tutti i rettangoli, da qui in avanti!
                                           // Il metodo richiama anche i metodi calcola area/perimetro
@@ -32,11 +32,23 @@ Rettangolo RettangoloInput = new Rettangolo();
 Console.WriteLine("Inserisci il nome del rettangolo");
 RettangoloInput.Nome = (Console.ReadLine());
 
+
 Console.WriteLine("Inserisci il valore \"Altezza\"");
 RettangoloInput.AltezzaRettangolo = float.Parse(Console.ReadLine());
 
 Console.WriteLine("Inserisci il valore \"Base\"");
 RettangoloInput.BaseRettangolo = float.Parse(Console.ReadLine());
+
+while (RettangoloInput.AltezzaRettangolo == RettangoloInput.BaseRettangolo)
+    {
+    Console.WriteLine("Per costruire un rettangolo, Base ed Altezza devono essere diversi! \n Ritenta!");
+    Console.WriteLine("Inserisci il valore \"Altezza\"");
+    RettangoloInput.AltezzaRettangolo = float.Parse(Console.ReadLine());
+
+    Console.WriteLine("Inserisci il valore \"Base\"");
+    RettangoloInput.BaseRettangolo = float.Parse(Console.ReadLine());
+    }
+
 
 RettangoloInput.StampaRettangolo();
 

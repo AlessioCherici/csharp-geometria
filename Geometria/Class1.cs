@@ -36,8 +36,8 @@ namespace Geometria
         public void StampaRettangolo() 
             {
             Console.WriteLine("-- " + Nome + " --");
-            Console.WriteLine("Base:" + BaseRettangolo + "cm");
-            Console.WriteLine("Altezza:" + AltezzaRettangolo + "cm");
+            Console.WriteLine("Base:" + BaseRettangolo + " cm");
+            Console.WriteLine("Altezza:" + AltezzaRettangolo + " cm");
             CalcolaPerimetro();
             CalcolaArea();
             }
